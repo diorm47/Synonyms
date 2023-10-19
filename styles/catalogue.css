@@ -91,3 +91,22 @@
 .hide_content {
   display: none;
 }
+@media only screen and (max-width: 500px) {
+  .cat_card_desc a, .cat_filters {
+    display: none;
+  }
+  .catalogue_card {
+    margin-bottom: 50px;
+  }
+  .catalogue_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section_title {
+    margin-bottom: 30px !important;
+  }
+  .catalogue_card  {
+    width: 100%;
+  }
+}

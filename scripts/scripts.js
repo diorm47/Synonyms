@@ -35,7 +35,3 @@ setInterval(() => {
 }, 5000);
 
 
-// function toggleMenu() {
-//   var element = document.querySelector(".nav_list_wrapper");
-//   element.classList.toggle("mob_menu_wrapper");
-// }

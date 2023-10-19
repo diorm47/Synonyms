@@ -34,3 +34,34 @@ input {
   width: 1160px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 1200px) {
+  .main_wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .policy_page .coll_name h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+  .collection_page {
+    margin-top: 30px;
+  }
+  .back_to_main {
+    margin-bottom: 40px;
+  }
+  .collection_page_card {
+    width: 155px;
+    height: 214px;
+  }
+  .collection_page_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 20px;
+    margin-bottom: 70px;
+  }
+  .collection_page_card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

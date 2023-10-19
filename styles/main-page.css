@@ -24,7 +24,7 @@ header {
 nav,
 .header_bottom {
   position: relative;
-  z-index: 11;
+  z-index: 1;
 }
 
 #bg1 {
@@ -184,7 +184,7 @@ nav,
   padding-right: 22%;
   gap: 8px;
 }
-.slick-dots .slick-active button{
+.slick-dots .slick-active button {
   background: #000;
 }
 .slick-dots li {
@@ -296,4 +296,115 @@ nav,
 }
 .coll_card_desc .card_link p {
   color: #353535;
+}
+
+@media only screen and (max-width: 1200px) {
+  .header_bottom {
+    padding: 0 20px;
+  }
+  .main_wrapper {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .header_category_block,
+  .brand_carousel_item,
+  .our_collections {
+    flex-direction: column;
+  }
+  .header_card,
+  .our_collection_card,
+  .brand_card {
+    width: 100%;
+  }
+  header {
+    padding-bottom: 75px;
+  }
+  .header_bottom {
+    flex-direction: column-reverse;
+    align-items: start;
+  }
+  .header_text {
+    margin-bottom: 50px;
+  }
+  .header_text p {
+    font-size: 30px;
+  }
+  .header_text p:nth-child(2) {
+    padding-left: 0 !important;
+  }
+  .header_btn {
+    width: 170px;
+    height: 50px;
+    font-size: 13px;
+  }
+  .header_category {
+    padding-top: 80px;
+  }
+  .section_title h2 {
+    font-size: 30px;
+  }
+  .section_title {
+    margin-bottom: 50px;
+  }
+  .header_card .card_img {
+    height: 100%;
+    object-fit: cover;
+  }
+  .header_category_block {
+    margin-bottom: 120px;
+  }
+  .brand_card img {
+    width: 230px !important;
+    height: auto !important;
+  }
+  .brand_text {
+    margin: 0;
+  }
+  .brand_card {
+    flex-direction: column-reverse;
+  }
+  .brand_card:first-child {
+    align-items: start;
+  }
+  .brand_card:first-child .brand_text {
+    margin-bottom: 30px;
+  }
+  .brand_card_secondary img {
+    width: 240px;
+  }
+  .brand_card_secondary {
+    align-items: flex-end;
+  }
+  .brand_card_secondary .brand_text {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  .slick-dots {
+    padding: 0;
+    justify-content: center;
+  }
+  .collections {
+    margin-top: 0;
+    margin-bottom: 60px;
+  }
+  .section_title {
+    margin-bottom: 30px;
+  }
+  .our_collection_card {
+    height: 372px;
+  }
+  .coll_card_desc {
+    left: 20px;
+    bottom: 20px;
+    width: 184px;
+    height: 150px;
+    border-radius: 7px;
+    padding: 20px 0 30px 30px;
+  }
+  .coll_card_desc .col__item_name {
+    margin: 25px 0;
+  }
 }

@@ -166,7 +166,6 @@
 
 .thumbnails {
   display: flex;
-  
 }
 
 .thumbnail {
@@ -181,4 +180,34 @@
 
 .thumbnail.active {
   opacity: 1;
+}
+
+@media only screen and (max-width: 500px) {
+  .about_item {
+    flex-direction: column;
+  }
+  #mainImage {
+    width: 100%;
+    height: auto;
+  }
+  .sizes_block {
+    display: none;
+  }
+  .sizes_title {
+    display: none;
+  }
+  .about_btns {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+  .about_btns button, .about_descr_text {
+    width: 100%;
+  }
+  .about_item {
+    margin-bottom: 0;
+  }
+  .thumbnail {
+    width: 48px;
+    height: 48px;
+  }
 }

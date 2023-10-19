@@ -47,3 +47,44 @@ footer {
   gap: 25px;
   margin-top: 90px;
 }
+
+@media only screen and (max-width: 1200px) {
+  .footer_wrapper {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 35px;
+  }
+  footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer_wrapper {
+    flex-direction: column;
+  }
+  .footer_menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .footer_contacts h2 {
+    font-size: 30px;
+  }
+  .footer_socials {
+    margin-top: 50px;
+  }
+  .footer_socials img {
+    width: 50px;
+  }
+  .footer_menu:last-child {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .footer_menu:last-child p {
+    margin: 0;
+  }
+}

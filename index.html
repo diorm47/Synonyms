@@ -25,6 +25,7 @@
         style="background-image: url(../assets/images/header-bg.png)"
       ></div>
       <div id="bg2" class="bg"></div>
+
       <nav>
         <div class="nav_wrapper">
           <div class="nav_logo">
@@ -45,8 +46,41 @@
               <a href="#"><p>контакты</p></a>
             </div>
           </div>
+          <div class="mob_menu_icon" onclick="toggleMenu()">
+            <img src="./assets/icons/mob-menu.svg" alt="" />
+          </div>
+          <div class="mob_menu">
+            <div class="nav_menu">
+              <div class="nav_menu_item">
+                <a href="./catalogue.html"><p>Магазин</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="./collection.html"><p>колекції</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>ПРо нас</p></a>
+              </div>
+              <div class="nav_menu_item">
+                <a href="#"><p>контакты</p></a>
+              </div>
+            </div>
+          </div>
+          <script>
+            function toggleMenu() {
+              var element = document.querySelector(".nav_wrapper");
+              element.classList.toggle("mob_menu_wrapper");
+              if (element.classList[1] == "mob_menu_wrapper") {
+                var header_bottom = document.querySelector(".header_bottom");
+                header_bottom.style.display = "none";
+              } else {
+                var header_bottom = document.querySelector(".header_bottom");
+                header_bottom.style.display = "flex";
+              }
+            }
+          </script>
         </div>
       </nav>
+
       <div class="header_bottom">
         <a href="./catalogue.html">
           <button class="header_btn">Каталог</button></a
