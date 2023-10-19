@@ -1,0 +1,76 @@
+.catalogue_page {
+  margin-top: 15px;
+}
+.catalogue_page .section_title {
+  margin-bottom: 80px;
+}
+
+.cat_filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+  gap: 60px;
+}
+
+.cat_filter p {
+  cursor: pointer;
+  color: #6a6a6a;
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.catalogue_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.catalogue_card {
+  width: 360px;
+  border-radius: 7px;
+  margin-bottom: 70px;
+}
+.catalogue_card img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.cat_card_desc {
+  padding-top: 20px;
+}
+.cat_card_desc span {
+  color: #000;
+  font-family: "Forum";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: normal;
+}
+.cat_card_desc p {
+  color: #000;
+  font-family: Forum;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 5px 0 20px;
+}
+.cat_card_desc button {
+  width: 147px;
+  height: 47px;
+  border-radius: 7px;
+  background: #353535;
+  color: #fff;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}

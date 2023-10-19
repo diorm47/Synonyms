@@ -1,0 +1,74 @@
+.collection_page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+}
+.back_to_main {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  gap: 10px;
+  margin-bottom: 60px;
+}
+.back_to_main p {
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.coll_page_title p {
+  color: #000;
+  text-align: center;
+  font-family: Forum;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+  opacity: 0.6;
+}
+.coll_name h1 {
+  margin-bottom: 40px;
+  color: #353535;
+  text-align: center;
+  font-family: Forum;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.collection_text {
+  max-width: 760px;
+  margin-bottom: 60px;
+}
+.collection_text p {
+  color: #353535;
+  text-align: center;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 21.75px */
+}
+.collection_page_card {
+  width: 360px;
+  height: 368px;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.collection_page_card img {
+  width: 100%;
+}
+
+.collection_page_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  margin-bottom: 120px;
+}

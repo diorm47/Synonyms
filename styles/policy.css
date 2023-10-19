@@ -1,0 +1,31 @@
+.policy_page {
+  margin-top: 45px;
+  margin-bottom: 60px;
+}
+.policy_page .coll_page_title p {
+  text-align: left;
+}
+.policy_page .coll_name h1 {
+  text-align: left;
+}
+.policy_content p {
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 21.75px */
+}
+
+.mb_46 {
+  margin-bottom: 45px;
+}
+.policy_content h3 {
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 145%; /* 30.45px */
+  margin-bottom: 15px;
+}

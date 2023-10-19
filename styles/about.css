@@ -1,0 +1,129 @@
+.about_item {
+  margin-top: 35px;
+  display: flex;
+  align-items: start;
+  gap: 40px;
+  margin-bottom: 150px;
+}
+.about_content_block_title {
+  color: #000;
+  font-family: "Forum";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+  opacity: 0.6;
+}
+.about_title h2 {
+  color: #353535;
+  font-family: "Forum";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.about_cost p {
+  color: #000;
+  font-family: "Forum";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 30px;
+}
+.about_sizes {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.about_size {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.sizes_block {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.sizes_block .about_content_block_title {
+  margin: 0;
+  cursor: pointer;
+}
+
+.about_btns {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+  gap: 15px;
+  margin-bottom: 52px;
+}
+.about_btns button {
+  border-radius: 7px;
+  padding: 16px 32px;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.about_btns button:first-child {
+  color: #fff;
+  border-radius: 7px;
+  background: #353535;
+}
+.about_btns button:last-child {
+  border-radius: 7px;
+  border: 1px solid #999;
+  background: #fff;
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.about_content_block_title_secondary {
+  color: #353535;
+  font-family: Forum;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+.about_descr_text {
+  width: 400px;
+  margin-bottom: 50px;
+}
+.about_descr_text p {
+  color: #353535;
+  text-align: justify;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 21.75px */
+}
+
+.about_recs .section_title {
+  text-align: left;
+  justify-content: start;
+  margin-bottom: 60px;
+}
+
+.about_recs .section_title h2 {
+  text-align: left;
+}

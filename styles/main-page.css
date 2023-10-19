@@ -1,0 +1,204 @@
+.header_text p:nth-child(2) {
+  padding-left: 100px;
+}
+.header_category {
+  padding-top: 150px;
+}
+.section_title {
+  margin-bottom: 80px;
+}
+.section_title h2 {
+  text-align: center;
+  color: #353535;
+  text-align: center;
+  font-family: "Forum";
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.header_category_block {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header_card {
+  margin-bottom: 40px;
+  width: 560px;
+  height: 430px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 1s ease;
+  position: relative;
+  border-radius: 7px;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.51) 0.38%,
+      rgba(0, 0, 0, 0) 34.7%
+    ),
+    url(<path-to-image>),
+    lightgray -120.656px -220.519px / 164.426% 321.283% no-repeat;
+}
+
+.header_card:hover .card_img {
+  transition: all 1s ease;
+  transform: scale(1.05);
+}
+.header_card .card_img {
+  width: 100%;
+  transition: all 1s ease;
+}
+
+.h_cat_desc {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  z-index: 11;
+  bottom: 35px;
+  padding: 0 30px;
+}
+
+.h_cat_desc div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.h_cat_desc_name p {
+  color: #fff;
+  font-family: "Forum";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.card_link p {
+  color: #fff;
+  font-family: "Inter Tight";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.card_widely {
+  width: 760px;
+}
+.card_shortly {
+  width: 360px;
+}
+
+.header_category_block {
+  margin-bottom: 400px;
+}
+.brand_wrapper {
+  padding-bottom: 150px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.brand_card {
+  width: 520px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.brand_card:first-child img {
+  height: 620px;
+  object-fit: cover;
+}
+.brand_card img {
+  width: 100%;
+  border-radius: 7px;
+}
+
+.brand_text {
+  margin-top: 65px;
+  width: 280px;
+  color: #353535;
+  text-align: justify;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 145%; /* 21.75px */
+}
+
+.brand_card_secondary {
+  width: 580px;
+  align-items: start;
+}
+
+.brand_card_secondary .brand_text {
+  margin: 0;
+  margin-bottom: 60px;
+  width: 320px;
+}
+
+.collections {
+  margin-top: 150px;
+  margin-bottom: 110px;
+}
+.our_collections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.our_collection_card {
+  width: 560px;
+  height: 634px;
+  border-radius: 7px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 40px;
+}
+.our_collection_card .col_card_img {
+  width: 100%;
+}
+.coll_card_desc {
+  position: absolute;
+  bottom: 68px;
+  left: 60px;
+  border-radius: 7px;
+  width: 239px;
+  height: 196px;
+  padding: 20px 40px;
+  background: #fbfbfb;
+}
+
+.coll_card_desc span {
+  color: #353535;
+  font-family: "Forum";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.6;
+}
+
+.coll_card_desc .col__item_name {
+  margin: 45px 0;
+  color: #353535;
+  font-family: Forum;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.coll_card_desc .card_link {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+.coll_card_desc .card_link p {
+  color: #353535;
+}
