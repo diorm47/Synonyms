@@ -20,7 +20,7 @@ const images = [
   "url(../assets/images/header-bg-2.jpg)"
 ];
 const imagesMob = [
-  "url(../assets/images/header-bg.png)",
+  "url(../assets/images/header-bg-2.jpg)",
   "url(../assets/images/header-mob.jpg)"
 ];
 let i = 0;
