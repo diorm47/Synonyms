@@ -23,52 +23,12 @@ nav {
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.nav_menu_item:hover p {
+  text-decoration: underline;
+  transition: all 0.4s ease;
 }
 .nav_secondary p {
   color: #353535;
 }
-
-header {
-  width: 100%;
-  height: 100vh;
-  background: url(../assets/images/header-bg.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: 86px;
-}
-
-.header_bottom {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  padding: 0 140px;
-}
-.header_btn {
-  border-radius: 7px;
-  width: 260px;
-  height: 65px;
-  background: #fff;
-  color: #000;
-  font-family: Inter Tight;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  text-transform: uppercase;
-}
-
-.header_text p {
-  color: #fff;
-  font-family: 'Forum', serif;
-  font-size: 35px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-

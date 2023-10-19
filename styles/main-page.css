@@ -1,3 +1,76 @@
+header {
+  width: 100%;
+  height: 100vh;
+  /* background: url(../assets/images/header-bg.png); */
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 86px;
+  position: relative;
+}
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: opacity 1s ease;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav,
+.header_bottom {
+  position: relative;
+  z-index: 11;
+}
+
+#bg1 {
+  opacity: 1;
+}
+
+#bg2 {
+  opacity: 0;
+}
+
+.header_bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 140px;
+}
+.header_btn {
+  border-radius: 7px;
+  width: 260px;
+  height: 65px;
+  background: #fff;
+  color: #000;
+  font-family: Inter Tight;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.header_btn:hover {
+  transition: all 0.4s ease;
+  color: #fff;
+  border-radius: 7px;
+  background: #353535;
+}
+
+.header_text p {
+  color: #fff;
+  font-family: "Forum", serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .header_text p:nth-child(2) {
   padding-left: 100px;
 }
@@ -98,9 +171,31 @@
 }
 .brand_wrapper {
   padding-bottom: 150px;
+}
+.brand_carousel_item {
   display: flex;
   align-items: start;
   justify-content: space-between;
+}
+.slick-dots {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 22%;
+  gap: 8px;
+}
+.slick-dots .slick-active button{
+  background: #000;
+}
+.slick-dots li {
+  list-style: none;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 6px;
+  height: 6px;
+  background: #b7b7b7;
+  border-radius: 50%;
 }
 .brand_card {
   width: 520px;

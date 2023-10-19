@@ -73,4 +73,21 @@
   font-weight: 500;
   line-height: normal;
   text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+.cat_card_desc button:hover {
+  background: #000;
+  transition: all 0.4s ease;
+}
+
+.active_filter p {
+  color: #353535;
+  font-family: Inter Tight;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.hide_content {
+  display: none;
 }

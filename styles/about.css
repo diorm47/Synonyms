@@ -48,8 +48,25 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.4s ease;
 }
-
+.about_size:hover {
+  background: #000;
+  transition: all 0.4s ease;
+}
+.about_size p {
+  transition: all 0.4s ease;
+}
+.about_size:hover p {
+  color: #fff;
+  transition: all 0.4s ease;
+}
+.active_size {
+  background: #000;
+}
+.active_size p {
+  color: #fff;
+}
 .sizes_block {
   display: flex;
   align-items: center;
@@ -81,6 +98,11 @@
   color: #fff;
   border-radius: 7px;
   background: #353535;
+  transition: all 0.4s ease;
+}
+.about_btns button:first-child:hover {
+  background: #000;
+  transition: all 0.4s ease;
 }
 .about_btns button:last-child {
   border-radius: 7px;
@@ -126,4 +148,37 @@
 
 .about_recs .section_title h2 {
   text-align: left;
+}
+
+/*  */
+
+.gallery {
+  text-align: center;
+}
+
+#mainImage {
+  width: 560px;
+  height: 710px;
+  margin-bottom: 7px;
+  border-radius: 7px;
+  object-fit: cover;
+}
+
+.thumbnails {
+  display: flex;
+  
+}
+
+.thumbnail {
+  width: 90px;
+  height: 90px;
+  border-radius: 7px;
+  margin-right: 7px;
+  cursor: pointer;
+  opacity: 0.8;
+  object-fit: cover;
+}
+
+.thumbnail.active {
+  opacity: 1;
 }

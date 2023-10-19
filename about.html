@@ -32,7 +32,40 @@
     <section class="main_wrapper">
       <div class="about_item">
         <div class="about_item_gallery">
-          <img src="./assets/images/catalogue/cat-1.png" alt="" />
+          <div class="gallery">
+            <img
+              id="mainImage"
+              src="./assets/images/about/about-3.jpg"
+              alt=""
+            />
+            <div class="thumbnails">
+              <img
+                class="thumbnail active"
+                src="./assets/images/about/about-1.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./assets/images/about/about-2.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./assets/images/about/about-3.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./assets/images/about/about-4.jpg"
+                alt=""
+              />
+              <img
+                class="thumbnail"
+                src="./assets/images/about/about-5.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
         <div class="about_content">
           <p class="about_content_block_title">Назва колекції</p>
@@ -148,5 +181,43 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const mainImage = document.getElementById("mainImage");
+        const thumbnails = document.querySelectorAll(".thumbnail");
+
+        thumbnails.forEach((thumbnail) => {
+          thumbnail.addEventListener("click", function () {
+            // Set new main image
+            mainImage.src = this.src;
+
+            // Remove active class from all thumbnails
+            thumbnails.forEach((thumb) => thumb.classList.remove("active"));
+
+            // Add active class to clicked thumbnail
+            this.classList.add("active");
+          });
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const sizeContainer = document.querySelector(".about_sizes");
+
+        sizeContainer.addEventListener("click", function (event) {
+          if (event.target.closest(".about_size")) {
+            const clickedSize = event.target.closest(".about_size");
+
+            sizeContainer
+              .querySelectorAll(".about_size")
+              .forEach(function (item) {
+                item.classList.remove("active_size");
+              });
+
+            clickedSize.classList.add("active_size");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

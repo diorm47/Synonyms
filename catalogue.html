@@ -37,66 +37,66 @@
         </h2>
       </div>
       <div class="cat_filters">
-        <div class="cat_filter"><p>Сукні</p></div>
-        <div class="cat_filter"><p>Жакети</p></div>
-        <div class="cat_filter"><p>Футболки</p></div>
-        <div class="cat_filter"><p>Кофти</p></div>
-        <div class="cat_filter"><p>Костюми</p></div>
-        <div class="cat_filter"><p>Аксесуари</p></div>
+        <div class="cat_filter" data-filter="first"><p>Сукні</p></div>
+        <div class="cat_filter" data-filter="jackets"><p>Жакети</p></div>
+        <div class="cat_filter" data-filter="t-shirts"><p>Футболки</p></div>
+        <div class="cat_filter" data-filter="coft"><p>Кофти</p></div>
+        <div class="cat_filter" data-filter="costums"><p>Костюми</p></div>
+        <div class="cat_filter" data-filter="acesuars"><p>Аксесуари</p></div>
       </div>
       <div class="catalogue_wrapper">
-        <div class="catalogue_card">
+        <div class="catalogue_card costums">
           <img src="./assets/images/catalogue/cat-1.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Dress-zhupan</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
-        <div class="catalogue_card">
+        <div class="catalogue_card jackets">
           <img src="./assets/images/catalogue/cat-2.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Ruffle dress</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
-        <div class="catalogue_card">
+        <div class="catalogue_card jackets">
           <img src="./assets/images/catalogue/cat-3.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Kimono dress</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
-        <div class="catalogue_card">
+        <div class="catalogue_card first">
           <img src="./assets/images/catalogue/cat-1.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Dress-zhupan</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
-        <div class="catalogue_card">
+        <div class="catalogue_card first">
           <img src="./assets/images/catalogue/cat-2.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Ruffle dress</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
-        <div class="catalogue_card">
+        <div class="catalogue_card t-shirts">
           <img src="./assets/images/catalogue/cat-3.png" alt="" />
           <div class="cat_card_desc">
             <span>назва колекції</span>
             <p>Kimono dress</p>
             <p>1699 грн</p>
-            <button>переглянути</button>
+            <a href="./about.html"> <button>переглянути</button></a>
           </div>
         </div>
       </div>
@@ -133,5 +133,39 @@
         </div>
       </div>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const filterContainer = document.querySelector(".cat_filters");
+        const galleryItems = document.querySelectorAll(".catalogue_card");
+        const firstFilter = filterContainer.querySelector(".cat_filter");
+
+        firstFilter.classList.add("active_filter");
+
+        filterContainer.addEventListener("click", function (event) {
+          if (event.target.closest(".cat_filter")) {
+            filterContainer
+              .querySelector(".active_filter")
+              .classList.remove("active_filter");
+            const clickedFilter = event.target.closest(".cat_filter");
+            clickedFilter.classList.add("active_filter");
+            const filterValue = clickedFilter.getAttribute("data-filter");
+
+            galleryItems.forEach(function (item) {
+              if (
+                item.classList.contains(filterValue) ||
+                filterValue === "all"
+              ) {
+                item.classList.remove("hide_content");
+                item.classList.add("show_content");
+              } else {
+                item.classList.add("hide_content");
+                item.classList.remove("show_content");
+              }
+            });
+          }
+        });
+      });
+    </script>
+    <!-- <script src="./scripts/scripts.js"></script> -->
   </body>
 </html>
