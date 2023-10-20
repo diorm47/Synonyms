@@ -45,3 +45,18 @@ setInterval(() => {
 
   i++;
 }, 5000);
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  window.addEventListener('scroll', function() {
+    const headerCategory = document.querySelector('.header_category');
+    const scrollPosition = window.scrollY;
+    const elementOffset = headerCategory.offsetTop;
+   const nav_wrapper = this.document.querySelector('.main_page_nav')
+    if (scrollPosition >= elementOffset) {
+      nav_wrapper.classList.add('main_nav_secondary');
+    } else {
+      nav_wrapper.classList.remove('main_nav_secondary');
+    }
+  });
+});
